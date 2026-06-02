@@ -3,7 +3,7 @@
 echo -n "Do you want to update/upgrade? [y/N] "
 read yesno
 
-if [ "$yesno" = "y"] || [ "$yesno" = "Y" ]; then 
+if [ "$yesno" = "y" ] || [ "$yesno" = "Y" ]; then 
   echo "Updating pkg..."
 
   pkg update && pkg upgrade
