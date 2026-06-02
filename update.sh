@@ -1,26 +1,18 @@
 #!/bin/bash
+echo -n "Do you want to update/upgrade? [y/N] " 
+read -r yn
 
-echo -n "Do you want to update/upgrade? [y/N] "
-read yesno
-
-if [ "$yesno" = "y" ] || [ "$yesno" = "Y" ]; then 
+if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
   echo "Updating pkg..."
-
   pkg update && pkg upgrade
 
-  echo "Updated pkg..."
-  
   echo "Updating apt..."
-  
-  apt update && apt upgrade
+  apt update && apt upgrade -y
 
-  echo "Updated apt..."
-  
   echo "Autoremoving and cleaning..."
+  apt autoremove -y && apt autoclean
 
-  apt autoremove && apt autoclean
-
-  echo "Done..."
+  echo "Done."
 else
   echo "Aborted because of unknown issue"
 fi
