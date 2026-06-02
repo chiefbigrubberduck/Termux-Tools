@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/termux.com/files/usr/bin/bash
 echo -n "Do you want to update/upgrade? [y/N] " 
 read -r yn
 
