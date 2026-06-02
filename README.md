@@ -4,3 +4,4 @@ A set of scripts to utilize features of your Termux installtion, useful tools su
 ## Available scripts/tools
 Below is the list of ALL available scripts (deperacated) and working/maintained.
 * [Auto-update](https://github.com/chiefbigrubberduck/Termux-Tools/wiki/Auto%E2%80%90update) 
+* [Infinite Text Repeater](https://github.com/chiefbigrubberduck/Termux-Tools/wiki/Infinite-Text-Repeater)
