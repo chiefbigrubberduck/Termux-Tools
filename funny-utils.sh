@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Checking dependencies..."
-if [ -e "sl" ] [ -e "figlet" ] [ -e "cowsay" ] [ -e "toilet" ] [ -e "rig" ] [ -e "cmatrix" ] [ -e "fortune" ]; then
+if [ -e "sl" ] || [ -e "figlet" ] || [ -e "cowsay" ] || [ -e "toilet" ] || [ -e "rig" ] || [ -e "cmatrix" ] || [ -e "fortune" ]; then
     echo -n "Depenedencies exist!"
 
     echo "Funny Utils - Portal for funny terminal tools"
