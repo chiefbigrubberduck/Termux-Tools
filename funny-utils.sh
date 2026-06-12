@@ -1,9 +1,7 @@
 #!/bin/bash
 
-DEPS="figlet sl cowsay toilet rig cmatrix fortune"
-
 echo "Checking dependencies..."
-if [ -e "$DEPS" ]; then
+if [ -e "sl" ] [ -e "figlet" ] [ -e "cowsay" ] [ -e "toilet" ] [ -e "rig" ] [ -e "cmatrix" ] [ -e "fortune" ]; then
     echo -n "Depenedencies exist!"
 
     echo "Funny Utils - Portal for funny terminal tools"
