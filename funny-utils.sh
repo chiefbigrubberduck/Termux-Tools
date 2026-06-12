@@ -82,7 +82,7 @@ if [ -e "$DEPS" ]; then
     fi
     echo "--------------------------------"
 else
-    echo "You must install the necessary dependencies! Proceed? [y/N]: "
+    echo -n "You must install the necessary dependencies! Proceed? [y/N]: "
     read DEPCHOICE
     if [ "$DEPCHOICE" = "Y" ] || [ "$DEPCHOICE" = "y" ]; then
         pkg install $DEPS
