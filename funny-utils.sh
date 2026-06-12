@@ -3,7 +3,7 @@
 DEPS="figlet cowsay sl toilet rig cmatrix fortune"
 
 echo "Checking dependencies..."
-if which "$DEPS" >/dev/null; then
+if which $DEPS >/dev/null; then
     echo -n "Depenedencies exist!"
 
     echo "Funny Utils - Portal for funny terminal tools"
