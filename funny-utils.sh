@@ -90,3 +90,4 @@ else
     else
         echo "Not installing dependencies... The script won't work..."
     fi
+fi
